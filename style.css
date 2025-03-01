@@ -1,7 +1,7 @@
 body {
     font-family: 'Jua', sans-serif;
     background-color: #ffffff;
-    box-sizing: border-box;
+    box-sizing: BORDER-box;
     color: #35465d;
 }
 
@@ -216,7 +216,7 @@ body {
     height: 2.7rem;
 }
 
-.isfj-box {
+.ISFJ-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -226,7 +226,7 @@ body {
     background-color: rgba(117, 204, 84, 0.2);
 }
 
-.isfj-bar {
+.ISFJ-bar {
     position: absolute;
     top: 0;
     left: 0;
@@ -235,7 +235,7 @@ body {
     background-color: rgba(117, 204, 84, 1);
 }
 
-.isfp-box {
+.ISFP-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -245,7 +245,7 @@ body {
     background-color: rgba(117, 204, 84, 0.2);
 }
 
-.isfp-bar {
+.ISFP-bar {
     position: absolute;
     top: 0;
     left: 0;
@@ -254,7 +254,7 @@ body {
     background-color: rgba(117, 204, 84, 1);
 }
 
-.istp-box {
+.ISTP-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -264,7 +264,7 @@ body {
     background-color: rgba(27, 175, 234, 0.2);
 }
 
-.istp-bar {
+.ISTP-bar {
     position: absolute;
     top: 0;
     left: 0;
@@ -273,7 +273,7 @@ body {
     background-color: rgba(27, 175, 234, 1);
 }
 
-.infj-box {
+.INFJ-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -283,7 +283,7 @@ body {
     background-color: rgba(251, 176, 59, 0.2);
 }
 
-.infj-bar {
+.INFJ-bar {
     position: absolute;
     top: 0;
     left: 0;
@@ -292,7 +292,7 @@ body {
     background-color: rgba(251, 176, 59, 1);
 }
 
-.istj-box {
+.ISTJ-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -302,7 +302,7 @@ body {
     background-color: rgba(195, 140, 102, 0.2);
 }
 
-.istj-bar {
+.ISTJ-bar {
     position: absolute;
     top: 0;
     left: 0;
@@ -311,7 +311,7 @@ body {
     background-color: rgba(195, 140, 102, 1);
 }
 
-.intj-box {
+.INTJ-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -321,7 +321,7 @@ body {
     background-color: rgba(49, 132, 155, 0.2);
 }
 
-.intj-bar {
+.INTJ-bar {
     position: absolute;
     top: 0;
     left: 0;
@@ -330,7 +330,7 @@ body {
     background-color: rgba(49, 132, 155, 1);
 }
 
-.infp-box {
+.INFP-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -340,7 +340,7 @@ body {
     background-color: rgba(235, 166, 190, 0.2);
 }
 
-.infp-bar {
+.INFP-bar {
     position: absolute;
     top: 0;
     left: 0;
@@ -349,7 +349,7 @@ body {
     background-color: rgba(235, 166, 190, 1);
 }
 
-.intp-box {
+.INTP-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -359,7 +359,7 @@ body {
     background-color: rgba(117, 204, 84, 0.2);
 }
 
-.intp-bar {
+.INTP-bar {
     position: absolute;
     top: 0;
     left: 0;
@@ -368,7 +368,7 @@ body {
     background-color: rgba(117, 204, 84, 1);
 }
 
-.enfj-box {
+.ENFJ-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -378,7 +378,7 @@ body {
     background-color: rgba(117, 204, 84, 0.2);
 }
 
-.enfj-bar {
+.ENFJ-bar {
     position: absolute;
     top: 0;
     left: 0;
@@ -387,7 +387,7 @@ body {
     background-color: rgba(117, 204, 84, 1);
 }
 
-.enfp-box {
+.ENFP-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -397,7 +397,7 @@ body {
     background-color: rgba(27, 175, 234, 0.2);
 }
 
-.enfp-bar {
+.ENFP-bar {
     position: absolute;
     top: 0;
     left: 0;
@@ -406,7 +406,7 @@ body {
     background-color: rgba(27, 175, 234, 1);
 }
 
-.entj-box {
+.ENTJ-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -416,7 +416,7 @@ body {
     background-color: rgba(251, 176, 59, 0.2);
 }
 
-.entj-bar {
+.ENTJ-bar {
     position: absolute;
     top: 0;
     left: 0;
@@ -425,7 +425,7 @@ body {
     background-color: rgba(251, 176, 59, 1);
 }
 
-.entp-box {
+.ENTP-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -435,7 +435,7 @@ body {
     background-color: rgba(195, 140, 102, 0.2);
 }
 
-.entp-bar {
+.ENTP-bar {
     position: absolute;
     top: 0;
     left: 0;
@@ -444,7 +444,7 @@ body {
     background-color: rgba(195, 140, 102, 1);
 }
 
-.esfj-box {
+.ESFJ-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -454,7 +454,7 @@ body {
     background-color: rgba(49, 132, 155, 0.2);
 }
 
-.esfj-bar {
+.ESFJ-bar {
     position: absolute;
     top: 0;
     left: 0;
@@ -463,7 +463,7 @@ body {
     background-color: rgba(49, 132, 155, 1);
 }
 
-.esfp-box {
+.ESFP-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -473,7 +473,7 @@ body {
     background-color: rgba(235, 166, 190, 0.2);
 }
 
-.esfp-bar {
+.ESFP-bar {
     position: absolute;
     top: 0;
     left: 0;
@@ -482,7 +482,7 @@ body {
     background-color: rgba(235, 166, 190, 1);
 }
 
-.estj-box {
+.ESTJ-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -492,7 +492,7 @@ body {
     background-color: rgba(251, 176, 59, 0.2);
 }
 
-.estj-bar {
+.ESTJ-bar {
     position: absolute;
     top: 0;
     left: 0;
@@ -501,7 +501,7 @@ body {
     background-color: rgba(251, 176, 59, 1);
 }
 
-.estp-box {
+.ESTP-box {
     position: absolute;
     top: 0;
     left: 0;
@@ -511,7 +511,7 @@ body {
     background-color: rgba(27, 175, 234, 0.2);
 }
 
-.estp-bar {
+.ESTP-bar {
     position: absolute;
     top: 0;
     left: 0;
