@@ -84,10 +84,6 @@
                 </div>
                 <p class="result-message"></p>
                 <div id="label-container" class="d-flex flex-column justify-content-around"></div>
-                <h5 class="author-name">*업로드 되는 사진은 어디에도 저장, 활용되지 않습니다.</h5>
-                <h6 class="notice">*실제 검사와 다를 수 있습니다.</h6>
-                <div class="addthis_inline_share_toolbox_gs6a"></div>
-                <div> ↑↑↑ 친구에게 <span style="color:blue">링크</span> 공유하기 ↑↑↑</div>
 
 
                 <div class="pt-3 image-title-wrap">
@@ -95,8 +91,6 @@
                     <span class="try-again-text">다른 사진으로 재시도</span>
                 </button>
                 </div>
-                <button id="shot" class="insta-btn">
-                <span class="insta-text">인스타 스토리 공유하기</span>
             </button>
             </div>
         </div>
@@ -104,30 +98,7 @@
 
     <div class="container pt-3">
     
-    <script>
-        $(function() {
-            $("#shot").on("click", function() {
-                // 캡쳐 라이브러리를 통해서 canvas 오브젝트를 받고 이미지 파일로 리턴한다.
-                html2canvas(document.querySelector("#capture")).then(canvas => {
-                    saveAs(canvas.toDataURL('image/png'), "인공지능이 판단한 당신의 mbti는.png");
-                });
-            });
 
-            function saveAs(uri, filename) {
-                // 캡쳐된 파일을 이미지 파일로 내보낸다.
-                var link = document.createElement('a');
-                if (typeof link.download === 'string') {
-                    link.href = uri;
-                    link.download = filename;
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                } else {
-                    window.open(uri);
-                }
-            }
-        });
-    </script>
 
     <script>
         function gaReload() {
@@ -150,7 +121,6 @@
                 };
                 reader.readAsDataURL(input.files[0]);
                 init().then(function() {
-                    console.log("hello");
                     predict();
                     $('#loading').hide();
                 });
