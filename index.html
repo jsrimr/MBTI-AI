@@ -305,27 +305,31 @@
     
     // 웹캠으로부터 현재 프레임을 캡쳐 후 예측 실행
     function captureImage() {
-      const video = document.getElementById('video');
-      const canvas = document.getElementById('canvas');
-      const context = canvas.getContext('2d');
-      context.drawImage(video, 0, 0, canvas.width, canvas.height);
-      const dataURL = canvas.toDataURL('image/png');
-      document.getElementById('face-image').src = dataURL;
-      
-      // 웹캠 화면 숨기기 및 캡쳐된 이미지 영역 보이기
-      video.style.display = 'none';
-      document.getElementById('capture-btn').style.display = 'none';
-      document.getElementById('capture').style.display = 'block';
-      
-      // 웹캠 스트림 정지
-      if (video.srcObject) {
-        video.srcObject.getTracks().forEach(track => track.stop());
-      }
-      // 로딩 스피너 보이기 후 예측 실행
-      document.getElementById('loading').style.display = 'block';
-      predict().then(() => {
-        document.getElementById('loading').style.display = 'none';
-      });
+        const video = document.getElementById('video');
+        const canvas = document.getElementById('canvas');
+        const context = canvas.getContext('2d');
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+        const dataURL = canvas.toDataURL('image/png');
+        const faceImage = document.getElementById('face-image');
+        faceImage.src = dataURL;
+        
+        // 웹캠 화면 숨기기 및 캡쳐된 이미지 영역 보이기
+        video.style.display = 'none';
+        document.getElementById('capture-btn').style.display = 'none';
+        document.getElementById('capture').style.display = 'block';
+        
+        // 웹캠 스트림 정지
+        if (video.srcObject) {
+            video.srcObject.getTracks().forEach(track => track.stop());
+        }
+        
+        // 이미지가 로드된 후 예측 실행
+        faceImage.onload = () => {
+            document.getElementById('loading').style.display = 'block';
+            predict().then(() => {
+            document.getElementById('loading').style.display = 'none';
+            });
+        };
     }
     
     // 다시 촬영할 때 웹캠을 재시작
